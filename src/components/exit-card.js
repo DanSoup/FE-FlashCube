@@ -54,7 +54,7 @@ function FlashCard ({pos, img, exitCube, updateCurrentCard}) {
                 material={{src: '#cardboard'}}
                 position={{x: 0, y: 0, z: -0.01}}>
             </Entity>
-            <a-text value="EXIT" align="center" font='https://cdn.aframe.io/fonts/Exo2Bold.fnt'></a-text>
+            <a-text value="EXIT" align="center" color="black" font='https://cdn.aframe.io/fonts/Exo2Bold.fnt'></a-text>
             <Entity
                 className="exitConfirm"
                 geometry={{primitive: 'plane', width: 1.2, height: 0.5}}
@@ -62,7 +62,7 @@ function FlashCard ({pos, img, exitCube, updateCurrentCard}) {
                 position={{x: 0, y: -0.35, z: -0.1}}
                 rotation="0 180 0"
                 events={{mousedown: exitCube}}>
-                <a-text value="EXIT" align="center" font='https://cdn.aframe.io/fonts/Exo2Bold.fnt'></a-text>
+                <a-text value="CONFIRM" align="center" font='https://cdn.aframe.io/fonts/Exo2Bold.fnt'></a-text>
             </Entity>
             <Entity
                 className="exitCard"

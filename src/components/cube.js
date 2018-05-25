@@ -137,7 +137,7 @@ class Cube extends React.Component {
             <Scene>
                 <a-assets>
                     <img id="logo" src="flashcubelogo.png"/>
-                    <img id="metal" src="metal.jpg"/>
+                    <img id="metal" src="background.png"/>
                     <img id="rawbeef" src="rawbeef.jpg"/>
                     <img id="cardboard" src="cardboard.jpg"/>
                     <img id="cubecursor" src="cubecursor.png"/>
@@ -154,6 +154,7 @@ class Cube extends React.Component {
                         position={{x: 0, y: 0, z: -0.2}}>
                     </Entity>
                 </a-entity>
+                <a-entity light="type: ambient; color: #FFF; intensity: 1.0"></a-entity>
                 <Entity
                     geometry={{primitive: 'plane', width: 4, height: 4, transparent: false}}
                     material={{src: "#logo"}}
@@ -169,7 +170,7 @@ class Cube extends React.Component {
                 </Entity>
                 <Entity
                     geometry={{primitive: 'box', width: 8.2, height: 8.2, depth: 8.2}}
-                    material={{src: '#metal', color: 'cyan', side: 'back'}}
+                    material={{src: '#metal', color: '#88A8A8', side: 'back'}}
                     position={{x: 0, y: 0, z: 0}}
                 >
                 </Entity>
